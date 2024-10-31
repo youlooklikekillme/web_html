@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Изменяем кириллицу на латиницу по клику</title>
+</head>
+<body>
+
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 8px 5px;
+  text-align: center;
+
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+  position: absolute;
+  top: 650px;
+  left: 60px;
+  z-index: 1;
+  background-color: #04AA6D;
+}
+
+</style>
+
+
+<div align="left" style="position: absolute; left: 35%; top: 10%;">
+	<img align="left" style="position: absolute;" src="passport_image.jpg">
+    <img align="center" style="position: relative; top: 430px; left: 20px;" src="my_photo.jpg" width="150px">
+    <span id="second_name" style="position: relative; top: 320px; left: 150px;">Евсеев</span>
+	<span id="first_name" style="position: relative; top: 377px; left: 98px;">Матвей</span>
+    <span id="thirty_name" style="position: relative; top: 405px; left: 30px;">Евгеньевич</span>
+    <span id="sex" style="position: relative; top: 433px; left: -130px;">муж</span>
+    <span style="position: relative; top: 433px; left: -30px;">12.01.2005</span>
+    <button id="for_click" class="button" >Нажмите здесь, чтобы изменить язык паспорта на латиницу</button>
+</div>
+
+<script src="../js/rename.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма с личными данными</title>
+</head>
+
+<html>
+<body>
+<h3 align="center">Форма с личными данными</h3>
+<form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <input type="hidden"  name="type_of_form" value="search">
+    <p>Фамилия: <input type="Text" name="second_name" size=20  value="Евсеев"></p>
+    <p>Имя: <input type="Text" name="first_name" size=20  value="Матвей"></p>
+    <p>Дата рождения: <input type="date" name="user_date_born"  value='2000-01-01'></p>
+    <p>Филиал обучения:
+        <input type="Radio" name="place" value="Moscow">Москва
+        <input type="Radio" name="place" value="Nizhny" checked>Нижний Новгород
+        <input type="Radio" name="place" value="Perm">Пермь
+        <input type="Radio" name="place" value="Saint-Petersburg">Санкт-Петербург
+    </p>
+    <p>Курс обучения:
+        <select name="course">
+            <OPTION value="1b">1 курс бакалавриата</OPTION>
+            <OPTION value="2b">2 курс бакалавриата</OPTION>
+            <OPTION value="3b">3 курс бакалавриата</OPTION>
+            <OPTION value="4b">4 курс бакалавриата</OPTION>
+            <OPTION value="1m">1 курс магистратуры</OPTION>
+            <OPTION value="2m">2 курс магистратуры</OPTION>
+        </select>
+    </p>
+    <p>Группа: <input type="Text" name="group" size=20  value="23ФМ"></p>
+    <p>Мобильный телефон: <input type="tel" name="phone_number" size=20  value="+79300000000" ></p>
+    <p>Электронная почта: <input type="email" name="email" size=20  value="e@gmail.com"></p>
+    <p>Дата отправки сообщения: <input type="date" name="user_date_send"  value='2024-11-06'></p>
+
+    <p>
+        <input type="Reset"  name="Reset"  value="Обновить">
+        <input type="Submit" name="submit"  value="Отправить">
+    </p>
+    <p>
+        <input type="Reset"  name="Reset"  value="Обновить">
+        <input type="Submit" name="submit"  value="Отправить">
+    </p>
+</form>
+</body>
+</html>

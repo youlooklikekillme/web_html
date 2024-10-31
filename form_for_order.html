@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма для заказа</title>
+</head>
+<body>
+<h3 align="center">Форма для заказа</h3>
+<form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <input type="hidden"  name="q" value="order">
+    <p>Имя: <input type="Text" name="first_name" size=20  value="Матвей"></p>
+    <p>Адрес: <input type="Text" name="place" size=20  value="ул.Костина 1в"></p>
+    <p>Сет, который хотите заказать:
+        <select name="set">
+            <OPTION value="set_samurai">Сет Самурай</OPTION>
+            <OPTION value="set_segun">Сет Сёгун</OPTION>
+            <OPTION value="set_krest">Сет Крестьянин</OPTION>
+        </select>
+    </p>
+    <p>Количество сетов: <input type="Number" name="number_of_set" size=20 value="0"></p>
+    <p>Количество наборов приборов:
+        <input type="Radio" name="nember_cutlery" value="1" checked>1
+        <input type="Radio" name="nember_cutlery" value="2">2
+        <input type="Radio" name="nember_cutlery" value="3">3
+        <input type="Radio" name="nember_cutlery" value="4">4
+        <input type="Radio" name="nember_cutlery" value="5">5
+    </p>
+    <p>Добавки:
+        <input type="Checkbox" name="addition"  value="chopsticks" checked>Палочки для еды
+        <input type="Checkbox"  name="addition"   value="soy_sauce">Соевый соус
+        <input type="Checkbox" name="addition" value="wasabi">Васаби
+        <input type="Checkbox" name="addition" value="pickled_ginger">Маринованный имбирь
+    </p>
+    <p>День, когда хотите получить заказ: <input type="date" name="data_for_order"  value='2024-11-06'></p>
+    <p>Промокод: <input type="password" name="promotional_code"  value=''></p>
+
+    <p>
+        <input type="Submit" name="submit"  value="Заказать">
+    </p>
+
+</form>
+</body>
+</html>
