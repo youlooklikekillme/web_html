@@ -7,9 +7,27 @@
 
 <html>
 <body>
+
+<style>
+ a {
+    text-decoration: none;
+ }
+</style>
+<ul>
+    <li><a href="../web_html/index.html" target="_self">Начальная страница сайта</a>
+    <li><a href="../web_html/index.html#head_1" target="_self">Простые примеры</a>
+    <li><a href="../web_html/index.html#head_2" target="_self"><b>Сложные примеры</b></a>
+    <ul>
+        <li><a href="../web_html/form_for_personal_data.html" target="_self"><b>Отправка личных контактных данных</b></a></li>
+        <li><a href="../web_html/form_for_order.html" target="_self">Заказ</a></li>
+    </ul>
+    <li><a href="../web_html/index.html#head_3" target="_self">Интересные примеры</a>
+</ul>
+
+
 <h3 align="center">Форма с личными данными</h3>
 <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
-    <input type="hidden"  name="type_of_form" value="search">
+    <input type="hidden"  name="q" value="search">
     <p>Фамилия: <input type="Text" name="second_name" size=20  value="Евсеев"></p>
     <p>Имя: <input type="Text" name="first_name" size=20  value="Матвей"></p>
     <p>Дата рождения: <input type="date" name="user_date_born"  value='2000-01-01'></p>
@@ -34,10 +52,6 @@
     <p>Электронная почта: <input type="email" name="email" size=20  value="e@gmail.com"></p>
     <p>Дата отправки сообщения: <input type="date" name="user_date_send"  value='2024-11-06'></p>
 
-    <p>
-        <input type="Reset"  name="Reset"  value="Обновить">
-        <input type="Submit" name="submit"  value="Отправить">
-    </p>
     <p>
         <input type="Reset"  name="Reset"  value="Обновить">
         <input type="Submit" name="submit"  value="Отправить">

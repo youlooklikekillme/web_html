@@ -6,6 +6,24 @@
 </head>
 <body>
 
+<style>
+ a {
+    text-decoration: none;
+ }
+</style>
+<ul>
+    <li><a href="../web_html/index.html" target="_self">Начальная страница сайта</a>
+    <li><a href="../web_html/index.html#head_1" target="_self"><b>Простые примеры</b></a>
+    <li><a href="../web_html/index.html#head_2" target="_self">Сложные примеры</a>
+    <li><a href="../web_html/index.html#head_3" target="_self">Интересные примеры</a>
+    <ul>
+        <li><a href="../web_html/passport.html" target="_self">Паспорт</a></li>
+        <li><a href="../web_html/change_passport_by_event.html" target="_self">Изменение паспорта на латиницу</a></li>
+        <li><a href="../web_html/solv_alg_pr.html" target="_self"><b>Решение алгоритмической задачи</b></a></li>
+    </ul>
+</ul>
+
+
 <div>
     <h4>Дано вещественное число A. Вычислить</h4>
         <ul>
@@ -14,5 +32,13 @@
             <li>x  = a − sin(a**2)) в остальных случаях</li>
         </ul>
 </div>
+<form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <input type="hidden"  name="q" value="answer">
+    <p>Значение переменной A: <input type="number" id="a_various" name="a_various" size="20" value="70"></p>
+    <p>Значение переменной x: <input type="number" id="x_various" name="x_various" size="20" value="70" readonly></p>
+    <button type="button" onclick="calculateX()">Вычислить x</button>
+    <input type="Submit" name="submit"  value="Отправить">
+</form>
+<script src="../js/solv_alg_pr.js"></script>
 </body>
 </html>

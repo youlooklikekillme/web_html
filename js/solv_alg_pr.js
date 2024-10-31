@@ -1,28 +1,14 @@
-function first_name(){
-    const item  = document.getElementById('first_name')
-    console.log(item.innerText)
-    item.innerHTML="Matvei"
-}
-function second_name(){
-    const item  = document.getElementById('second_name')
-    console.log(item.innerText)
-    item.innerHTML="Evseev"
-}
-function thirty_name(){
-    const item  = document.getElementById('thirty_name')
-    console.log(item.innerText)
-    item.innerHTML="Eugenievich"
-}
-function sex(){
-    const item  = document.getElementById('sex')
-    console.log(item.innerText)
-    item.innerHTML="male"
-}
-
-
-
-const node_for_click = document.getElementById("for_click")
-node_for_click.addEventListener("click",first_name)
-node_for_click.addEventListener("click",second_name)
-node_for_click.addEventListener("click",thirty_name)
-node_for_click.addEventListener("click",sex)
+function calculateX() {
+    const a = parseFloat(document.getElementById('a_various').value);
+    let x;
+    if (a < 10) {
+        x = Math.pow(a, 4);
+    }
+    else if (a > 61) {
+        x = a;
+    }
+    else {
+    x = a - Math.sin(Math.pow(a, 2));
+    }
+    document.getElementById('x_various').value = x;
+    }
