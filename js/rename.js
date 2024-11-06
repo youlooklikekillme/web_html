@@ -1,28 +1,31 @@
-function first_name(){
-    const item  = document.getElementById('first_name')
-    console.log(item.innerText)
-    item.innerHTML="Matvei"
+function first_name() {
+    const item  = document.getElementById("first_name");
+    item.innerHTML = "Matvei";
+    console.log(item.innerHTML);
 }
-function second_name(){
-    const item  = document.getElementById('second_name')
-    console.log(item.innerText)
-    item.innerHTML="Evseev"
+
+function second_name() {
+    const item = document.getElementById("second_name");
+    item.innerHTML = "Evseev";
+    console.log(item.innerHTML);
 }
-function thirty_name(){
-    const item  = document.getElementById('thirty_name')
-    console.log(item.innerText)
-    item.innerHTML="Eugenievich"
+
+function thirty_name() {
+    const item = document.getElementById("thirty_name");
+    item.innerHTML = "Eugenievich";
+    console.log(item.innerHTML);
 }
-function sex(){
-    const item  = document.getElementById('sex')
-    console.log(item.innerText)
-    item.innerHTML="male"
+
+function sex() {
+    const item = document.getElementById("sex");
+    item.innerHTML = "male";
+    console.log(item.innerHTML);
 }
 
 
-
-const node_for_click = document.getElementById("for_click")
-node_for_click.addEventListener("click",first_name)
-node_for_click.addEventListener("click",second_name)
-node_for_click.addEventListener("click",thirty_name)
-node_for_click.addEventListener("click",sex)
+document.getElementById("for_click").addEventListener("click", function() {
+    first_name();
+    second_name();
+    thirty_name();
+    sex();
+});
